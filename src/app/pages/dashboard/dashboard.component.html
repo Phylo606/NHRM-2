@@ -1,0 +1,79 @@
+<body class="home_grad">
+
+    <!-- Body -->
+    <nav class="navbar navbar-light bg-light">
+        <span class="navbar-brand mb-0 h1"><img
+                src="https://www.nh.org.au/wp-content/themes/northern-health-2019/library/images/logo.svg"
+                height="20" /></span>
+        <div class="dropdown" style="display:inline">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <span style="padding: 10px">
+                    <i class="fas fa-house-user"></i> <span class="_size_hide"> </span><b><span
+                            class="_name"></span></b>
+                </span>
+            </button>
+            <div style="padding-bottom:0" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="_main _main1 dropdown-item">
+
+                    <i class="fas fa-home">
+                    </i> Home
+                </a>
+                <a class="_main _main2 dropdown-item"><i class="fas fa-phone-alt"></i>
+                    Extras</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item nh_logout_btn" href="" data-toggle="modal" data-target="#exampleModal"><i
+                        class="fas fa-sign-out-alt"></i> Logout...
+                </a>
+
+            </div>
+        </div>
+    </nav>
+    <div>
+        <div class="panel panel-default custom">
+            <div class="panel-heading text-center">Categories</div>
+            <div class="panel-body text-center">
+                <!--Categories-->
+                <button class="home_btn btn btn-primary"><i class="fas fa-lungs"></i><br />IPC</button>
+            </div>
+        </div>
+        <br>
+        <div class="panel panel-default custom">
+            <div class="panel-heading text-center">Options</div>
+            <div class="panel-body text-center">
+                <button class="home_btn btn btn-success"><i class="fas fa-book"></i><br />My Resources
+                </button>
+                <button class="home_btn btn btn-dark"><i class="fas fa-info"></i><br />My Details</button>
+                <button class="home_btn btn btn-danger"><i class="fas fa-balance-scale"></i><br />Report My
+                    Status</button>
+                <button class="home_btn btn btn-warning"><i class="fas fa-file-signature"></i><br />My Surveys</button>
+                <button class="home_btn btn btn-info"><i class="fas fa-user-cog"></i><br />Account settings</button>
+                <button class="home_btn btn btn-info"><i class="fas fa-phone"></i><br />Contact Us</button>
+            </div>
+        </div>
+        <hr style="border-color: dodgerblue; border-width: 2px; margin: 10px" />
+
+        <!-- Modals and things -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Logout</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Are you sure you want to log out of the app?
+                    </div>
+                    <div class="modal-footer">
+                        <button onclick="window.location = 'login.design.html'" type="button" class="btn btn-danger"><i
+                                class="fas fa-key"></i> Log out!</button>
+                        <button type="button" class="btn btn-light" data-dismiss="modal"><i class="fas fa-times"></i>
+                            Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

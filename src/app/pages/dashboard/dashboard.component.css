@@ -1,0 +1,81 @@
+html, body {
+    background: url(https://img.freepik.com/free-photo/wooden-floor-sunny-day_1134-28.jpg?size=626&ext=jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0;
+    height: 100%;
+    /*    font-family: Calibri, sans-serif;
+*/
+}
+
+.btn, .modal-content, .dropdown-menu {
+    box-shadow: 2px 2px 3px #0004;
+}
+
+.no-shadow {
+    box-shadow: none;
+}
+
+.home_btn {
+    margin: 5px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.home_btn i {
+    font-size: x-large;
+}
+
+.nh_logout_btn {
+    background: #dc3545;
+    color: white;
+    padding-bottom: 8px;
+    border-radius: 0 0 0.175rem 0.175rem;
+}
+
+.nh_logout_btn:hover {
+    color: white;
+    background-color: darkred;
+}
+
+@media only screen and (max-width: 800px) {
+    .nh_topbar._size2 {
+        padding: 5px;
+    }
+    .home_btn {
+        width: 70%;
+    }
+    ._size2_hide {
+        display: none;
+    }
+    ._size2_show {
+        display: inherit;
+    }
+    ._pages {
+        overflow-x: scroll;
+    }
+    ._nav {
+        max-width: 20vw;
+    }
+    .nh_topbar_left {
+        max-width: 60%;
+    }
+    .nh_topbar_back {
+        height: 47px;
+    }
+}
+
+.custom {
+    width: 50%;
+    margin: 0 auto;
+    min-width: 350px;
+}
+
+.modal {
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
