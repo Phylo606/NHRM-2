@@ -13,10 +13,10 @@
                             class="_name"></span></b>
                 </span>
             </button>
-            <div style="padding-bottom:0" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="_main _main1 dropdown-item">
+            <div style="padding-bottom:0" class="dropdown-menu" aria-labelledby="dropdownMenuButton" routerLink="/ipc">
+                <a class="_main _main1 dropdown-item" routerLink="/ipc">
 
-                    <i class="fas fa-home">
+                    <i class="fas fa-home" routerLink="/ipc">
                     </i> Home
                 </a>
                 <a class="_main _main2 dropdown-item"><i class="fas fa-phone-alt"></i>
@@ -34,7 +34,8 @@
             <div class="panel-heading text-center">Categories</div>
             <div class="panel-body text-center">
                 <!--Categories-->
-                <button class="home_btn btn btn-primary"><i class="fas fa-lungs"></i><br />IPC</button>
+                <button class="home_btn btn btn-primary" [routerLink]="['/ipc']" routerLinkActive="active"><i
+                        class="fas fa-lungs"></i><br />IPC</button>
             </div>
         </div>
         <br>
@@ -48,7 +49,8 @@
                     Status</button>
                 <button class="home_btn btn btn-warning"><i class="fas fa-file-signature"></i><br />My Surveys</button>
                 <button class="home_btn btn btn-info"><i class="fas fa-user-cog"></i><br />Account settings</button>
-                <button class="home_btn btn btn-info"><i class="fas fa-phone"></i><br />Contact Us</button>
+                <button class="home_btn btn btn-info" routerLink="/contact"><i class="fas fa-phone"></i><br />Contact
+                    Us</button>
             </div>
         </div>
         <hr style="border-color: dodgerblue; border-width: 2px; margin: 10px" />
@@ -67,8 +69,8 @@
                         Are you sure you want to log out of the app?
                     </div>
                     <div class="modal-footer">
-                        <button onclick="window.location = 'login.design.html'" type="button" class="btn btn-danger"><i
-                                class="fas fa-key"></i> Log out!</button>
+                        <button routerLink="/" type="button" class="btn btn-danger"><i class="fas fa-key"></i> Log
+                            out!</button>
                         <button type="button" class="btn btn-light" data-dismiss="modal"><i class="fas fa-times"></i>
                             Cancel</button>
                     </div>
@@ -77,3 +79,4 @@
         </div>
     </div>
 </body>
+<app-test-footer></app-test-footer>

@@ -10,14 +10,7 @@ import { SurveyStartComponent } from './survey-start/survey-start.component'
 import { ContactScreenComponent } from './contact-screen/contact-screen.component'
 
 const routes: Routes = [
-  { path: 'home', component: TestHomeComponent },
-  { path: 'login', component: TestLoginComponent },
-  { path: 'scaletest', component: ScaleScreenComponent },
-  { path: '', component: TestComponent },
-  { path: 'fluidtest', component: FluidDrainComponent },
-  { path: 'feelingtest', component: FeelingSliderComponent },
-  { path: 'surveyhometest', component: SurveyStartComponent },
-  { path: 'about', component: ContactScreenComponent }
+  
 ];
 
 @NgModule({

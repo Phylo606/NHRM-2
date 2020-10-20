@@ -10,9 +10,7 @@ html, body {
 */
 }
 
-.btn, .modal-content, .dropdown-menu {
-    box-shadow: 2px 2px 3px #0004;
-}
+
 
 .no-shadow {
     box-shadow: none;

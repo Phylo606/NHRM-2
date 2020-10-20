@@ -13,6 +13,11 @@ import { TestComponent } from './test/test.component';
 import { TestHomeComponent } from './test-home/test-home.component';
 import { TestLoginComponent } from './test-login/test-login.component';
 import { TopbarComponent } from './topbar/topbar.component';
+import { RouterModule } from '@angular/router';
+import { dashCaseToCamelCase } from '@angular/compiler/src/util';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { IpcComponent } from './pages/ipc/ipc.component';
+import { TestFooterComponent } from './test-footer/test-footer.component';
 
 @NgModule({
   declarations: [
@@ -27,10 +32,29 @@ import { TopbarComponent } from './topbar/topbar.component';
     TestComponent,
     TestHomeComponent,
     TestLoginComponent,
-    TopbarComponent
+    TopbarComponent,
+    IpcComponent,
+    TestFooterComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule,
+    RouterModule.forRoot([{
+      path: 'home',
+      component: DashboardComponent
+    },
+      {
+        path: 'contact',
+        component: ContactScreenComponent
+      },
+      {
+        path: 'ipc',
+        component: IpcComponent
+      },
+    {
+        path: '',
+        component: TestLoginComponent
+    }])
   ],
   providers: [],
   bootstrap: [AppComponent]
