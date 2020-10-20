@@ -1,0 +1,77 @@
+<app-topbar></app-topbar>
+<div style="padding: 10px;">
+<h5> {{strQ}}</h5>
+<p>Please select a rating and tap Submit</p>
+<app-scale-answer strNum="0" strText="{{strAns1}}" htmlIcon="assets/0.png" clsColour="btn-success">
+</app-scale-answer>
+<app-scale-answer strNum="1" strText="{{strAns2}}" htmlIcon="assets/1.png" clsColour="btn-primary">
+</app-scale-answer>
+<app-scale-answer strNum="2" strText="{{strAns3}}" htmlIcon="assets/2.png" clsColour="btn-warning">
+</app-scale-answer>
+<app-scale-answer strNum="3" strText="{{strAns4}}" htmlIcon="assets/3.png"
+    clsColour="btn-danger"></app-scale-answer>
+<app-scale-answer strNum="4" strText="{{strAns5}}" htmlIcon="assets/4.png"
+    clsColour="btn-dark"></app-scale-answer>
+</div>
+<hr />
+<p class="scale_showSelected alert alert-danger">Please select an option...</p>
+<button data-toggle="modal" data-target="#scaleModal" class="scale_submit btn btn-primary " disabled><i
+        class="fas fa-check-square"></i> Submit</button>
+<button class="scale_back btn btn-danger " onclick="window.location='home.design.html'"><i class="fas fa-times"></i>
+    Cancel</button>
+
+    <!-- <app-topbar></app-topbar>
+    <div style="padding: 10px;">
+    <h5><i class="fas fa-running"></i> <i class="fas fa-bed"></i> How limited are you feeling now?</h5>
+    <p>Please select a rating and tap Submit</p>
+    <app-scale-answer strNum="0" strText="Active; Fully Able" htmlIcon="assets/0.png" clsColour="btn-success">
+    </app-scale-answer>
+    <app-scale-answer strNum="1" strText="Active; Slightly Restricted" htmlIcon="assets/1.png" clsColour="btn-primary">
+    </app-scale-answer>
+    <app-scale-answer strNum="2" strText="Able to Self-care; 50% Active" htmlIcon="assets/2.png" clsColour="btn-warning">
+    </app-scale-answer>
+    <app-scale-answer strNum="3" strText="Able to Limited Self-care; Inactive" htmlIcon="assets/3.png"
+        clsColour="btn-danger"></app-scale-answer>
+    <app-scale-answer strNum="4" strText="Completely Disabled; Bound to Bed or Chair" htmlIcon="assets/4.png"
+        clsColour="btn-dark"></app-scale-answer>
+    </div>
+    <hr />
+    <p class="scale_showSelected alert alert-danger">Please select an option...</p>
+    <button data-toggle="modal" data-target="#scaleModal" class="scale_submit btn btn-primary " disabled><i
+            class="fas fa-check-square"></i> Submit</button>
+    <button class="scale_back btn btn-danger " onclick="window.location='home.design.html'"><i class="fas fa-times"></i>
+        Cancel</button>
+    
+     -->
+
+
+
+<div class="modal fade" id="scaleModal" tabindex="-1" aria-labelledby="submitScaleMsg" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="scaleModalLabel">Submit</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" id="scaleModal-body">
+                <p>Is this correct? Submit this rating now?</p>
+                <b>
+                    <p class="scale_showSelected"></p>
+                </b>
+                <div class="alert alert-warning">A friendly reminder that this is a scale <b>from most able to least
+                        able</b> - illustrated by a black circle -, not the other way around. Ensure you have chosen
+                    accordingly.</div>
+            </div>
+            <div class="modal-footer">
+                <button onclick="
+window.onbeforeunload = null; //IMPORTANT
+document.location = 'home.design.html'
+" type="button" class="modal_done btn btn-success"><i class="fas fa-chevron-right"></i> Confirm!</button>
+                <button type="button" class="btn btn-light" data-dismiss="modal"><i class="fas fa-times"></i> Go
+                    Back</button>
+            </div>
+        </div>
+    </div>
+</div>

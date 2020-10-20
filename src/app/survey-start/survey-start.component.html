@@ -1,0 +1,17 @@
+<app-topbar></app-topbar>
+<div class="scale_btns">
+    <p>Complete the survey if you are required to. Please answer the following questions.</p>
+    <div class="alert alert-primary">
+        <h5>This survey records your:</h5>
+        <span><b>{{strName}}</b></span>
+        <p>{{strText}}</p>
+    </div>
+    <p><b>Tap Next to start or Cancel to decline.</b> During the survey, tap Next (after answering a question) to continue, Prev to go to the previous question or Cancel* or the  <i class="fas fa-chevron-left"></i> link* to cancel or reset the survey respectively. Click Submit to finish.</p>
+
+    <p class="scale_showCancel alert alert-warning">*Exiting this survey (in any way) will, with a warning, discard any of its unsubmitted progress.</p>
+    <h5><span class="scale_label"><span class="scale_label">14</span> questions</span></h5>
+
+</div>
+<hr />
+<button class=" btn btn-success " onclick="window.location='survey.design.html'"><i class="fas fa-chevron-right"></i> Next!</button>
+<button class="scale_back btn btn-danger " onclick="window.location='home.design.html'"><i class="fas fa-times"></i> Cancel</button>

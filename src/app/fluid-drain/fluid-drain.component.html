@@ -1,0 +1,71 @@
+<app-topbar></app-topbar>
+<div style="padding: 10px;">
+    <h5>How much fluid did you draw today?</h5>
+    <p>Choose a value from the slider on the bottom or enter an exact value from the top or use the buttons to fine tune it. Tap Submit to submit the value.</p>
+    <hr>
+    <div style="text-align: center  ">
+        <div style="display:inline-block">
+            <div style="width: 300px" class="input-group mb-3">
+                <input id="fluidInput" min="0" type="number" class="form-control" aria-label="Fluid drawn" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <span class="input-group-text" id="basic-addon2">mL</span>
+                </div>
+                <button id="btnMinus" class="btn btn-outline-dark no-shadow">
+                    <i class="fas fa-minus"></i>
+                </button>
+                <button id="btnPlus"  class="btn btn-outline-dark no-shadow">
+                    <i class="fas fa-plus"></i>
+                </button>
+            </div>
+
+        </div>
+        <input type="range" min="0" max="600" value="300" id="fluidScale" style="width:100%; margin-top: 50px;">
+        <div style="text-align:left; display:flex; justify-content: space-between; margin-bottom: 50px;">
+            <span>0mL</span>
+            <span>150</span>
+            <span>300</span>
+            <span>450</span>
+            <span>600</span>
+        </div>
+
+        <div class="invalidNumber alert alert-danger" style="display: none;">
+            A value you entered was not a valid value and was reset. Please try again. <button class="btn btn-outline-danger no-shadow" id="btnDismiss" >Dismiss</button>
+        </div>
+    </div>
+    <hr/>
+    <button data-toggle="modal" data-target="#scaleModal" class="scale_submit btn btn-primary "><i class="fas fa-check-square" aria-hidden="true"></i> Submit!</button>
+    <button class="scale_back btn btn-danger " onclick="window.location='home.design.html'"><i class="fas fa-times" aria-hidden="true"></i> Cancel</button>
+
+</div>
+
+
+
+
+<div class="modal fade" id="scaleModal" tabindex="-1" aria-labelledby="submitScaleMsg" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="scaleModalLabel">Submit</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" id="scaleModal-body">
+                <p>Is this correct? Submit this value now?</p>
+                <b><p class="scale_showSelected"></p></b>
+                <div class="invalidNumber alert alert-danger">
+                    A value you entered was rejected and reset. Make sure the current one is correct.
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button onclick="
+window.onbeforeunload = null; //IMPORTANT
+document.location = 'home.design.html'
+" type="button" class="modal_done btn btn-success">
+                    <i class="fas fa-chevron-right"></i> Confirm!
+                </button>
+                <button type="button" class="btn btn-light" data-dismiss="modal"><i class="fas fa-times"></i> Go Back</button>
+            </div>
+        </div>
+    </div>
+</div>
