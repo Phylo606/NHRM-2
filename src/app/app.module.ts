@@ -18,6 +18,7 @@ import { dashCaseToCamelCase } from '@angular/compiler/src/util';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { IpcComponent } from './pages/ipc/ipc.component';
 import { TestFooterComponent } from './test-footer/test-footer.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -34,11 +35,13 @@ import { TestFooterComponent } from './test-footer/test-footer.component';
     TestLoginComponent,
     TopbarComponent,
     IpcComponent,
-    TestFooterComponent
+    TestFooterComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
     RouterModule,
+    AppRoutingModule,
     RouterModule.forRoot([{
       path: 'home',
       component: DashboardComponent
