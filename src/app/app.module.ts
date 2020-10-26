@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { MatDialogModule } from '@angular/material/dialog'
 
 import { AppComponent } from './app.component';
 import { SplashScreenComponent } from './splash-screen/splash-screen.component';
@@ -18,6 +19,9 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { IpcComponent } from './pages/ipc/ipc.component';
 import { TestFooterComponent } from './test-footer/test-footer.component';
 import { AppRoutingModule } from './app-routing.module';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { WelcomePopupComponent } from './pages/welcome-popup/welcome-popup.component';
+import { WelcomeDialogComponent } from './pages/welcome-popup/welcome-dialog/welcome-dialog.component';
 
 @NgModule({
   declarations: [
@@ -35,12 +39,15 @@ import { AppRoutingModule } from './app-routing.module';
     TopbarComponent,
     IpcComponent,
     TestFooterComponent,
-    DashboardComponent
+    DashboardComponent,
+    WelcomePopupComponent,
+    WelcomeDialogComponent
   ],
   imports: [
     BrowserModule,
     RouterModule,
     AppRoutingModule,
+    MatDialogModule,
     RouterModule.forRoot([{
       path: 'home',
       component: DashboardComponent
@@ -61,7 +68,8 @@ import { AppRoutingModule } from './app-routing.module';
     { path: 'fluidtest', component: FluidDrainComponent },
     { path: 'feelingtest', component: FeelingSliderComponent },
     { path: 'surveyhometest', component: SurveyStartComponent },
-    ])
+    ]),
+    NoopAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
