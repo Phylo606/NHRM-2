@@ -8,16 +8,12 @@ import { FluidDrainComponent } from './fluid-drain/fluid-drain.component'
 import { FeelingSliderComponent } from './feeling-slider/feeling-slider.component'
 import { SurveyStartComponent } from './survey-start/survey-start.component'
 import { ContactScreenComponent } from './contact-screen/contact-screen.component'
-
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
 const routes: Routes = [
-  { path: 'home', component: TestHomeComponent },
-  { path: 'login', component: TestLoginComponent },
-  { path: 'scaletest', component: ScaleScreenComponent },
-  { path: '', component: TestComponent },
-  { path: 'fluidtest', component: FluidDrainComponent },
-  { path: 'feelingtest', component: FeelingSliderComponent },
-  { path: 'surveyhometest', component: SurveyStartComponent },
-  { path: 'about', component: ContactScreenComponent }
+  {
+      path: 'home',
+      component: DashboardComponent
+    },
 ];
 
 @NgModule({

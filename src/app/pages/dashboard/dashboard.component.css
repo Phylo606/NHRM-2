@@ -1,0 +1,90 @@
+html, body {
+    background: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0;
+    height: 100%;
+    /*    font-family: Calibri, sans-serif;
+*/
+}
+
+.no-shadow {
+    box-shadow: none;
+}
+
+.home_btn {
+    margin: 5px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.home_btn i {
+    font-size: x-large;
+}
+
+.nh_logout_btn {
+    background: #dc3545;
+    color: white;
+    padding-bottom: 8px;
+    border-radius: 0 0 0.175rem 0.175rem;
+}
+
+.nh_logout_btn:hover {
+    color: white;
+    background-color: darkred;
+}
+
+@media only screen and (max-width: 800px) {
+    .nh_topbar._size2 {
+        padding: 5px;
+    }
+    .home_btn {
+        min-width: 30%;
+    }
+    ._size2_hide {
+        display: none;
+    }
+    ._size2_show {
+        display: inherit;
+    }
+    ._pages {
+        overflow-x: scroll;
+    }
+    ._nav {
+        max-width: 20vw;
+    }
+    .nh_topbar_left {
+        max-width: 60%;
+    }
+    .nh_topbar_back {
+        height: 47px;
+    }
+}
+
+.custom {
+    width: 50%;
+    margin: 20px auto;
+    min-width: 350px;
+}
+/* 
+.modal {
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+.panel-default{
+    background-color: #0006;
+    border-radius: 10px;
+    padding-bottom: 5px;
+}
+.panel-heading{
+    background-color: #fff6;
+    border-radius: 10px 10px 0 0;
+    padding: 5px;
+    margin-bottom: 5px;
+
+}

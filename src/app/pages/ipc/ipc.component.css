@@ -1,0 +1,11 @@
+html, body {
+ background: none;
+ background-size: cover;
+}
+.panel-heading{
+    background-color: navy;
+    color: white;
+}
+.panel-default{
+    border:solid thin navy;
+}

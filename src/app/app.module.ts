@@ -13,6 +13,10 @@ import { TestComponent } from './test/test.component';
 import { TestHomeComponent } from './test-home/test-home.component';
 import { TestLoginComponent } from './test-login/test-login.component';
 import { TopbarComponent } from './topbar/topbar.component';
+import { RouterModule } from '@angular/router';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { IpcComponent } from './pages/ipc/ipc.component';
+import { TestFooterComponent } from './test-footer/test-footer.component';
 import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
@@ -28,11 +32,36 @@ import { AppRoutingModule } from './app-routing.module';
     TestComponent,
     TestHomeComponent,
     TestLoginComponent,
-    TopbarComponent
+    TopbarComponent,
+    IpcComponent,
+    TestFooterComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    RouterModule,
+    AppRoutingModule,
+    RouterModule.forRoot([{
+      path: 'home',
+      component: DashboardComponent
+    },
+    {
+      path: 'contact',
+      component: ContactScreenComponent
+    },
+    {
+      path: 'ipc',
+      component: IpcComponent
+    },
+    {
+      path: '',
+      component: TestLoginComponent
+    },
+    { path: 'scaletest', component: ScaleScreenComponent },
+    { path: 'fluidtest', component: FluidDrainComponent },
+    { path: 'feelingtest', component: FeelingSliderComponent },
+    { path: 'surveyhometest', component: SurveyStartComponent },
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
