@@ -2,22 +2,17 @@
 <div style="padding: 10px;">
 <h5> {{strQ}}</h5>
 <p>Please select a rating and tap Submit</p>
-<app-scale-answer strNum="0" strText="{{strAns1}}" htmlIcon="assets/0.png" clsColour="btn-success">
-</app-scale-answer>
-<app-scale-answer strNum="1" strText="{{strAns2}}" htmlIcon="assets/1.png" clsColour="btn-primary">
-</app-scale-answer>
-<app-scale-answer strNum="2" strText="{{strAns3}}" htmlIcon="assets/2.png" clsColour="btn-warning">
-</app-scale-answer>
-<app-scale-answer strNum="3" strText="{{strAns4}}" htmlIcon="assets/3.png"
-    clsColour="btn-danger"></app-scale-answer>
-<app-scale-answer strNum="4" strText="{{strAns5}}" htmlIcon="assets/4.png"
-    clsColour="btn-dark"></app-scale-answer>
+<app-scale-answer strNum="{{strNum1}}" strText="{{strAns1}}" imgIcon="{{img1}}" faIcon="{{fa1}}" clsColour="{{clsColour1}}"></app-scale-answer>
+<app-scale-answer strNum="{{strNum2}}" strText="{{strAns2}}" imgIcon="{{img2}}" faIcon="{{fa2}}" clsColour="{{clsColour2}}"></app-scale-answer>
+<app-scale-answer strNum="{{strNum3}}" strText="{{strAns3}}" imgIcon="{{img3}}" faIcon="{{fa3}}" clsColour="{{clsColour3}}"></app-scale-answer>
+<app-scale-answer strNum="{{strNum4}}" strText="{{strAns4}}" imgIcon="{{img4}}" faIcon="{{fa4}}" clsColour="{{clsColour4}}"></app-scale-answer>
+<app-scale-answer strNum="{{strNum5}}" strText="{{strAns5}}" imgIcon="{{img5}}" faIcon="{{fa5}}" clsColour="{{clsColour5}}"></app-scale-answer>
 </div>
 <hr />
 <p class="scale_showSelected alert alert-danger">Please select an option...</p>
 <button data-toggle="modal" data-target="#scaleModal" class="scale_submit btn btn-primary " disabled><i
         class="fas fa-check-square"></i> Submit</button>
-<button class="scale_back btn btn-danger " onclick="window.location='home.design.html'"><i class="fas fa-times"></i>
+<button class="scale_back btn btn-danger " onclick="window.location='/ipc'"><i class="fas fa-times"></i>
     Cancel</button>
 
     <!-- <app-topbar></app-topbar>
@@ -65,10 +60,7 @@
                     accordingly.</div>
             </div>
             <div class="modal-footer">
-                <button onclick="
-window.onbeforeunload = null; //IMPORTANT
-document.location = 'home.design.html'
-" type="button" class="modal_done btn btn-success"><i class="fas fa-chevron-right"></i> Confirm!</button>
+                <button id="okButton" onclick="window.onbeforeunload = null" type="button" class="modal_done btn btn-success"><i class="fas fa-chevron-right"></i> Confirm!</button>
                 <button type="button" class="btn btn-light" data-dismiss="modal"><i class="fas fa-times"></i> Go
                     Back</button>
             </div>

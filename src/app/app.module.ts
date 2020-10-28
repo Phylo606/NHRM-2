@@ -18,6 +18,8 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { IpcComponent } from './pages/ipc/ipc.component';
 import { TestFooterComponent } from './test-footer/test-footer.component';
 import { AppRoutingModule } from './app-routing.module';
+import { LikertComponent } from './pages/likert/likert.component';
+import { EcogComponent } from './pages/ecog/ecog.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { AppRoutingModule } from './app-routing.module';
     TopbarComponent,
     IpcComponent,
     TestFooterComponent,
-    DashboardComponent
+    DashboardComponent,
+    LikertComponent,
+    EcogComponent
   ],
   imports: [
     BrowserModule,
@@ -61,6 +65,8 @@ import { AppRoutingModule } from './app-routing.module';
     { path: 'fluidtest', component: FluidDrainComponent },
     { path: 'feelingtest', component: FeelingSliderComponent },
     { path: 'surveyhometest', component: SurveyStartComponent },
+    { path: 'likert', component: LikertComponent},
+    { path: 'ecog', component: EcogComponent}
     ])
   ],
   providers: [],

@@ -11,7 +11,8 @@ export class ScaleAnswerComponent implements OnInit {
 
   constructor() { }
 
-  @Input() htmlIcon: string;
+  @Input() imgIcon: string;
+  @Input() faIcon: string;
   @Input() strText: string;
   @Input() clsColour: string = "";
   @Input() strNum: string;
