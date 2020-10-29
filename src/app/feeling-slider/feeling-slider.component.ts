@@ -11,7 +11,7 @@ export class FeelingSliderComponent implements OnInit {
 
   ngOnInit(): void {
     //when the page is loaded
-    $(window).on("load", function () {
+    setTimeout(() => {  {   
 
       //declare function
       function add(val) {
@@ -87,7 +87,7 @@ export class FeelingSliderComponent implements OnInit {
       });
 
       //end of $.on
-    });
+    },100);
 
   }
 
