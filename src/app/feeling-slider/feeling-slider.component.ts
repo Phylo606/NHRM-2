@@ -86,8 +86,8 @@ export class FeelingSliderComponent implements OnInit {
         done();
       });
 
-      //end of $.on
-    },100);
+    }
+  },100);
 
   }
 
