@@ -76,7 +76,7 @@ export class ScaleScreenComponent implements OnInit {
           $(".scale_back").html($(".scale_back").html() + "*");
 
           //https://stackoverflow.com/questions/36763141/is-there-any-lifecycle-hook-like-window-onbeforeunload-in-angular2 Earlier one wasn't working
-          window.addEventListener("beforeunload", ScaleScreenComponent.onExit);
+          // window.addEventListener("beforeunload", ScaleScreenComponent.onExit);
         }
         $(".scale_btns .btn").removeClass("scale_this");
         $(this).addClass("scale_this");
