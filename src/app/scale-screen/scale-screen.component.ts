@@ -87,13 +87,9 @@ export class ScaleScreenComponent implements OnInit {
         $(".scale_submit").prop('disabled', false);
   
       });
-      console.info("Yay");
+      console.info("Questionare handlers have been initialised!");
     } }, 100);
 
   }
-  init() {
 
-
-
-  }
 }
