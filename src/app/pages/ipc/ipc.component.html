@@ -4,9 +4,7 @@
     <app-topbar strTitle="IPC" bolShowBackSpacer="false"> </app-topbar>
 
     <div>
-        <div style="background-color: white" class="nh_topbar_back"><img
-                src="https://www.nh.org.au/wp-content/themes/northern-health-2019/library/images/logo.svg" height="15"
-                style="margin: 15px 10px" /></div>
+      
         <div class="panel panel-default custom">
             <div class="panel-heading text-center">IPC</div>
 
@@ -16,7 +14,7 @@
                 <button class="home_btn btn btn-success"><i class="fas fa-theater-masks"></i><br />Record Likert
                     Score<span style="font-size:x-small">
                         ("LICK-ert")</span> </button>
-                <button onclick="document.location = 'range.design.html'" class="home_btn btn btn-dark"><i
+                <button routerLink="/fluidtest" class="home_btn btn btn-dark"><i
                         class="fas fa-tint"></i><br />Record Fluid Drain</button>
                 <button class="home_btn btn btn-danger"><i class="fas fa-thumbtack"></i><br />Record VAS Scores</button>
                 <button onclick="document.location = 'start.survey.design.html'" class="home_btn btn btn-warning"><i

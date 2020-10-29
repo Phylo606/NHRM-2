@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ScaleScreenComponent } from 'src/app/scale-screen/scale-screen.component';
 
 @Component({
   selector: 'app-ecog',
@@ -13,6 +14,8 @@ export class EcogComponent implements OnInit {
     setTimeout(() => {  {   
          $('#okButton').on('click',function(){
         alert($("#output2").text());
+        window.removeEventListener('beforeUnload',ScaleScreenComponent.onExit)
+        window.location = '/ipc';
       })
     }
   },100);

@@ -8,6 +8,13 @@ import { createPublicKey } from 'crypto';
   styleUrls: ['./scale-screen.component.css']
 })
 export class ScaleScreenComponent implements OnInit {
+  static onExit(event :any) {
+    {
+      event.preventDefault();
+      event.returnValue = "Unsaved modifications";
+      return event;
+   }
+  }
   constructor(){
   //possibly for testing purposes only
   // constructor(private activatedRoute: ActivatedRoute) {
@@ -49,6 +56,7 @@ export class ScaleScreenComponent implements OnInit {
   @Input() strNum4: string = "3";
   @Input() strNum5: string = "4";
 
+
   ngOnInit(): void {
 
     setTimeout(() => {  {
@@ -68,11 +76,7 @@ export class ScaleScreenComponent implements OnInit {
           $(".scale_back").html($(".scale_back").html() + "*");
 
           //https://stackoverflow.com/questions/36763141/is-there-any-lifecycle-hook-like-window-onbeforeunload-in-angular2 Earlier one wasn't working
-          window.addEventListener("beforeunload", (event) => {
-            event.preventDefault();
-            event.returnValue = "Unsaved modifications";
-            return event;
-         });
+          window.addEventListener("beforeunload", ScaleScreenComponent.onExit);
         }
         $(".scale_btns .btn").removeClass("scale_this");
         $(this).addClass("scale_this");
