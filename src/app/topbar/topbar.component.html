@@ -29,14 +29,27 @@
     </div>
 </div> -->
 <div>
-    <div style="background-color: white" class=" nh_logo"><img
-            src="http://nh.org.au/wp-content/themes/northern-health-2019/library/images/logo.svg" height="25"
-            ></div>
+    <div class=" nh_logo"><img
+            src="http://nh.org.au/wp-content/themes/northern-health-2019/library/images/logo.svg" height="25"></div>
     <div class="banner">
         <div class="container">
             <div class="row home">
-                <a routerLink="/home"><i class="fas fa-home fa-lg" style="color: white; margin-right: 5px;"
-                        height="25"></i></a>
+                <a routerLink="/home"><i class="fas fa-home fa-lg" height="25"></i> </a>
+                <a class="drop">
+                    <span class="dropbtn"><i class="fas fa-bars"></i> Shortcuts... <i class="fas fa-chevron-down"></i></span>
+                    <div class="dropmenu">
+                        <a href="">ECOG</a>
+                        <hr>
+                        <a href="">My Resources</a>
+                        <a href="">My Details</a>
+                        <a href="">Report My Status</a>
+                        <a href="">My Surveys</a>
+                        <a href="">Contact Us</a>
+
+                    </div>
+                </a>
+                <a class="logoutbtn" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-sign-out-alt"></i>
+                    Logout...</a>
 
             </div>
         </div>

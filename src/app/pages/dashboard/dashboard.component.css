@@ -64,9 +64,25 @@ html, body {
 }
 
 .custom {
-    width: 50%;
+    max-width: 50%;
     margin: 20px auto;
-    min-width: 350px;
+}
+@media only screen and (max-width: 800px) {
+    .custom {
+        max-width: 70%;
+    }
+    .dashshort{
+        width: 70%;
+    }}
+
+.dashmain{
+    box-shadow: 0 0 10px dodgerblue;
+}
+.dashshort br{
+    display: none;
+}
+.dashshort i{
+    padding-right: 5px;
 }
 /* 
 .modal {
