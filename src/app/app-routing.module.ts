@@ -9,11 +9,16 @@ import { FeelingSliderComponent } from './feeling-slider/feeling-slider.componen
 import { SurveyStartComponent } from './survey-start/survey-start.component'
 import { ContactScreenComponent } from './contact-screen/contact-screen.component'
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { LoginComponent } from './pages/login/login.component';
 const routes: Routes = [
   {
       path: 'home',
       component: DashboardComponent
     },
+    {
+      path: 'login',
+      component: LoginComponent
+    }
 ];
 
 @NgModule({

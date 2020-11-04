@@ -24,6 +24,7 @@ import { EcogComponent } from './pages/ecog/ecog.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { WelcomePopupComponent } from './pages/welcome-popup/welcome-popup.component';
 import { WelcomeDialogComponent } from './pages/welcome-popup/welcome-dialog/welcome-dialog.component';
+import { LoginComponent } from './pages/login/login.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { WelcomeDialogComponent } from './pages/welcome-popup/welcome-dialog/wel
     LikertComponent,
     EcogComponent,
     WelcomePopupComponent,
-    WelcomeDialogComponent
+    WelcomeDialogComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
