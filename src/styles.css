@@ -57,19 +57,6 @@ button:disabled {
     display: block;
 }
 
-.home_btn {
-    margin: 5px;
-    padding: 10px;
-    font-weight: bold;
-}
-
-    .home_btn i {
-        font-size: x-large;
-    }
-
-.nh_home .btn-danger {
-    font-weight: bold;
-}
 
 .nh_bottom {
     top: inherit;

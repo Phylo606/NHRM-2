@@ -4,25 +4,38 @@
     <app-topbar strTitle="IPC" bolShowBackSpacer="false"> </app-topbar>
 
     <div>
-      
+
         <div class="panel panel-default custom">
             <div class="panel-heading text-center">IPC</div>
 
             <div class="panel-body text-center">
-                <button routerLink="/ecog" class="home_btn btn btn-primary"><i class="fas fa-running"></i><br />Record ECOG
+                <button routerLink="/ecog" class="home_btn btn btn-primary"><i class="fas fa-running"></i><br />Record
+                    ECOG
                     Status</button>
-                <button routerLink="/likert" class="home_btn btn btn-success"><i class="fas fa-theater-masks"></i><br />Record Likert
+                <button routerLink="/likert" class="home_btn btn btn-success"><i
+                        class="fas fa-theater-masks"></i><br />Record Likert
                     Score<span style="font-size:x-small">
                         ("LICK-ert")</span> </button>
-                <button routerLink="/fluidtest" class="home_btn btn btn-dark"><i
-                        class="fas fa-tint"></i><br />Record Fluid Drain</button>
-                <button routerLink="/feelingtest" class="home_btn btn btn-danger"><i class="fas fa-thumbtack"></i><br />Record VAS Scores</button>
+                <button routerLink="/fluidtest" class="home_btn btn btn-dark"><i class="fas fa-tint"></i><br />Record
+                    Fluid Drain</button>
+                <span class="drop">
+                    <button class="home_btn btn btn-danger"><i class="fas fa-thumbtack"></i><br />Record VAS
+                        Scores<i class="fas noformat fa-chevron-down"></i></button>
+                    <div class="dropmenu">
+                        <button routerLink="/feelingtest" class="home_btn dashshort btn btn-danger"><i
+                                class="fas fa-thumbtack"></i><br />Record Pain VAS</button>
+                        <button routerLink="/feelingtest" class="home_btn dashshort btn btn-danger"><i
+                                class="fas fa-thumbtack"></i><br />Record Breathlessness VAS</button>
+                    </div>
+                </span>
                 <button routerLink="/surveyhometest" class="home_btn btn btn-warning"><i
                         class="fas fa-grin-beam-sweat"></i><br />Record HADS Score</button>
                 <button class="home_btn btn btn-info"><i class="fas fa-thumbs-up"></i><br />Record QoL Scores</button>
 
             </div>
         </div>
+        <div style="height: 100px;"></div>
+
         <div class="custom">
             <button class="btn btn-primary" routerLink="/home"><i class="fas fa-home fa-lg"></i> Back</button>
 
@@ -30,4 +43,4 @@
     </div>
     <br>
 </body>
-    <app-test-footer></app-test-footer>
+<app-test-footer></app-test-footer>

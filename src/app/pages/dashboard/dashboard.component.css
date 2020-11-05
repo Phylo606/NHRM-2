@@ -10,6 +10,7 @@ html, body {
 */
 }
 
+
 .no-shadow {
     box-shadow: none;
 }
@@ -20,7 +21,7 @@ html, body {
     font-weight: bold;
 }
 
-.home_btn i {
+.home_btn i:not(.noformat) {
     font-size: x-large;
 }
 
@@ -103,4 +104,18 @@ html, body {
     padding: 5px;
     margin-bottom: 5px;
 
+}
+
+
+.dropmenu {
+    display: none;
+    background: white;
+    min-width: 200px;
+    margin-top: -10px;
+    padding: 5px;
+    border: solid thin #8884;
+    box-shadow: 0 2px 5px #0004;
+}
+.drop:hover .dropmenu {
+    display: block;
 }

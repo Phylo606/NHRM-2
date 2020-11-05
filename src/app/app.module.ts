@@ -68,7 +68,7 @@ import { LoginComponent } from './pages/login/login.component';
     },
     {
       path: '',
-      component: TestLoginComponent
+      component: LoginComponent
     },
     { path: 'scaletest', component: ScaleScreenComponent },
     { path: 'fluidtest', component: FluidDrainComponent },
